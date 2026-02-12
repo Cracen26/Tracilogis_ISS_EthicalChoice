@@ -1,0 +1,7 @@
+1: [] (I(iss,avoid_injuries_damage) -> <> B(iss,fireEmergency(_)))
+
+2: [] (D(iss,checkEthicalChoices(fireEmergency)) -> <> D(iss,delete(fireEmergency(1))))
+
+3: [] (D(iss,checkEthicalChoices(fireEmergency)) -> <> D(iss,delete(fireEmergency(4))))
+
+4: [] (B(iss,fire) -> ~B(prod,start))
