@@ -95,7 +95,7 @@ mas.agent.11.name = iss
 
 mas.builder = gwendolen.GwendolenMASBuilder
 
-env = gwendolen.tracilogis.TracilogisEnv2
+env = gwendolen.tracilogis.TracilogisEnv
 
 log.info = ail.mas.DefaultEnvironment
 log.format = brief

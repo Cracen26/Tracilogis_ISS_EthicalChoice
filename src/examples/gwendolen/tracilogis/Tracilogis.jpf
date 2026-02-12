@@ -1,4 +1,4 @@
 @using = mcapl
 
 target = ail.util.AJPF_w_AIL
-target.args =/src/examples/gwendolen/tracilogis/Tracilogis.ail,/src/examples/gwendolen/tracilogis/Tracilogis.psl,1
+target.args =/src/examples/gwendolen/tracilogis/Tracilogis.ail,/src/examples/gwendolen/tracilogis/Tracilogis.psl,4
