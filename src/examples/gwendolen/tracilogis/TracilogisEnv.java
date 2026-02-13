@@ -139,7 +139,7 @@ public class TracilogisEnv extends DefaultEnvironment {
 		
 		ethicalRule3.addTerm(avoidHugeDamage);
 		ethicalRule3.addTerm(new NumberTermImpl(10));
-		ethicalRule3.addTerm(new NumberTermImpl(0.4));
+		ethicalRule3.addTerm(new NumberTermImpl(0.6)); // for property2 0,6
 		
 		ethicalRule4.addTerm(avoidMediumDamage);
 		ethicalRule4.addTerm(new NumberTermImpl(2));
@@ -188,6 +188,12 @@ public class TracilogisEnv extends DefaultEnvironment {
 		fireEmegPlansSeverity.add(3,0.0);
 		fireEmegPlansSeverity.add(4,0.0);
 		fireEmegPlansSeverity.add(5,0.0);
+
+        // align for property 2 and 3
+        Predicate ethicalrules1 = new Predicate("ethicalrules1");
+        Predicate ethicalrules2 = new Predicate("ethicalrules2");
+        addPercept("iss", ethicalrules1);
+
 		 
 	}
 	

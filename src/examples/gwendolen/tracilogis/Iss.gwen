@@ -64,12 +64,4 @@ avoid_injuries_damage [achieve]
     delete(fireEmergency(6)),
     -.lock;
 
-/* === CORRECTION IMPORTANTE ICI === */
-
-+evacuated : {True} <-
-    +.lock,
-    delete(evacuated),
-    repair,
-    .send(prod, :tell, start),
-    .send(prod1, :tell, start),
-    -.lock;
++evacuated : {True} <- +.lock, +solve_fire_emergency, +avoid_injuries_damage, delete(evaluated), repair, .send(prod, :tell, start), .send(prod1, :tell, start), -.lock;

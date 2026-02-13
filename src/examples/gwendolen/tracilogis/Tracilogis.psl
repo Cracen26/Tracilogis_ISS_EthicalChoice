@@ -1,4 +1,4 @@
-1: I(iss,avoidinjuriesdamage) -> <> B(iss,solvefireemergency)
+1: I(iss,avoid_injuries_damage) -> <> B(iss,solve_fire_emergency)
 
 2: B(iss,ethical_rules1) -> <> D(iss,delete(fireEmergency(1)))
 
