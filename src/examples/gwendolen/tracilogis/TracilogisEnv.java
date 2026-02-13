@@ -2,7 +2,6 @@ package gwendolen.tracilogis;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
@@ -13,7 +12,6 @@ import ail.syntax.NumberTerm;
 import ail.syntax.NumberTermImpl;
 import ail.syntax.Predicate;
 import ail.util.AILexception;
-import ajpf.util.AJPFLogger;
 import ajpf.util.VerifySet;
 
 /**
@@ -191,7 +189,7 @@ public class TracilogisEnv extends DefaultEnvironment {
 
         // align for property 2 and 3
         // Predicate ethicalrules1 = new Predicate("ethicalrules1");
-        Predicate ethicalrules2 = new Predicate("ethicalrules2");
+        Predicate ethicalrules2 = new Predicate("ethical_rules2");
         // addPercept("iss", ethicalrules2);
         addPercept("iss", ethicalrules2);
 
