@@ -341,6 +341,11 @@ public class TracilogisEnv extends DefaultEnvironment {
 			double min = 100;
 			switch(plan) {
 				case "fireEmergency":
+                    // RESET severities at each evaluation
+                    for (int i = 0; i < fireEmegPlansSeverity.size(); i++) {
+                        fireEmegPlansSeverity.set(i, 0.0);
+                    }
+
 					//(plan,severity)
 					//fireEmergP1VioE = [rule1, rule4, rule5]
 					//E(avoidWorkersInjured,3,0.5)
